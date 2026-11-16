@@ -4,8 +4,8 @@ This note collects the practical differences and ready-to-paste statements. Repl
 
 ## Common preparation
 
-1. Replace `USERNAME`, `zenodo.XXXXXXX` and the author details in `CITATION.cff`, `README.md` and `docs/SI_methods.md`.
-2. Create a public GitHub repository, push the code, tag the release (`git tag -a v1.0.0 -m "v1.0.0"`), create a GitHub Release, and archive the release on Zenodo. Use the DOI returned by Zenodo, not only the GitHub URL.
+1. Replace `zenodo.XXXXXXX` and the author details in `CITATION.cff`, `README.md` and `docs/SI_methods.md`.
+2. Create a GitHub repository (private during preparation; make it public or archive it on Zenodo at submission), push the code, tag the release (`git tag -a v1.0.0 -m "v1.0.0"`), create a GitHub Release, and archive the release on Zenodo. Use the DOI returned by Zenodo, not only the GitHub URL.
 3. Choose a license. The repository ships with MIT; change the copyright line if your institution requires another license.
 4. Do **not** commit raw experimental data, credentials, tokens or unpublished Source Data to the public repository. The repository contains only code, a synthetic demo dataset and tests.
 5. Add the archived DOI to `README.md`, `CITATION.cff` and the SI.
@@ -19,7 +19,7 @@ This note collects the practical differences and ready-to-paste statements. Repl
 - If figures are generated from the pairwise table or the matrices, deposit the underlying numerical values as Source Data and describe the mapping in the Source Data legend.
 - Suggested main-text Code availability wording:
 
-> **Code availability.** The analysis code used in this study is available at https://github.com/USERNAME/cd-gfactor-similarity (version 1.0.0) and is archived at https://doi.org/10.5281/zenodo.XXXXXXX. The repository contains the complete pipeline, a synthetic demo dataset in both export layouts, and unit tests.
+> **Code availability.** The analysis code used in this study is available at https://github.com/nib2024/cd-gfactor-similarity (version 1.0.0) and is archived at https://doi.org/10.5281/zenodo.XXXXXXX. The repository contains the complete pipeline, a synthetic demo dataset in both export layouts, and unit tests.
 
 - Suggested Data availability wording:
 
@@ -33,11 +33,11 @@ This note collects the practical differences and ready-to-paste statements. Repl
 - The archived Zenodo DOI can be cited as a reference in the SI; in the main text, cite the repository/DOI in the Code Availability paragraph.
 - Suggested SI Code Availability wording:
 
-> **Code Availability.** The complete analysis pipeline, including data parsing, spectral preprocessing, shift-search similarity and mirror metrics, Cotton-band matching, surrogate-based significance testing, and generation of all tables, is available at https://github.com/USERNAME/cd-gfactor-similarity (version 1.0.0) and archived at https://doi.org/10.5281/zenodo.XXXXXXX. The repository includes a synthetic demo dataset in both export layouts, unit tests, and documentation. Raw experimental data are available from the corresponding author upon reasonable request.
+> **Code Availability.** The complete analysis pipeline, including data parsing, spectral preprocessing, shift-search similarity and mirror metrics, Cotton-band matching, surrogate-based significance testing, and generation of all tables, is available at https://github.com/nib2024/cd-gfactor-similarity (version 1.0.0) and archived at https://doi.org/10.5281/zenodo.XXXXXXX. The repository includes a synthetic demo dataset in both export layouts, unit tests, and documentation. Raw experimental data are available from the corresponding author upon reasonable request.
 
 ## Suggested short sentence for the main text (either journal)
 
-> The similarity, mirror-similarity and wavelength-shift analysis was performed with a custom Python pipeline (https://github.com/USERNAME/cd-gfactor-similarity; archived at https://doi.org/10.5281/zenodo.XXXXXXX), which is described in detail in the Supplementary Methods.
+> The similarity, mirror-similarity and wavelength-shift analysis was performed with a custom Python pipeline (https://github.com/nib2024/cd-gfactor-similarity; archived at https://doi.org/10.5281/zenodo.XXXXXXX), which is described in detail in the Supplementary Methods.
 
 ## What the repository contains
 

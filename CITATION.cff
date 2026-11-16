@@ -9,7 +9,7 @@ authors:
     orcid: "https://orcid.org/0000-0000-0000-0000"
 version: 1.0.0
 date-released: "2026-11-16"
-repository-code: "https://github.com/USERNAME/cd-gfactor-similarity"
+repository-code: "https://github.com/nib2024/cd-gfactor-similarity"
 url: "https://doi.org/10.5281/zenodo.XXXXXXX"
 license: MIT
 keywords:

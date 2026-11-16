@@ -127,7 +127,7 @@ MIT. See [`LICENSE`](LICENSE).
 
 ## Code and data availability
 
-The code is released at `https://github.com/USERNAME/cd-gfactor-similarity` and archived at `https://doi.org/10.5281/zenodo.XXXXXXX`. The repository contains only code, a synthetic demo dataset and tests; raw experimental data are available from the corresponding author upon reasonable request.
+The code is released at `https://github.com/nib2024/cd-gfactor-similarity` and archived at `https://doi.org/10.5281/zenodo.XXXXXXX`. The repository contains only code, a synthetic demo dataset and tests; raw experimental data are available from the corresponding author upon reasonable request.
 
 ## Contact
 
