@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the manuscript and this archived release."
+type: software
+title: "cd-gfactor-similarity: similarity and mirror-image analysis of circular dichroism g-factor spectra"
+abstract: "Python pipeline for pairwise similarity, mirror-image similarity and rigid wavelength-shift analysis of CD g-factor spectra, including Cotton-band matching, phase-randomized surrogate significance testing and per-workbook FDR control."
+authors:
+  - family-names: "Surname"
+    given-names: "Given"
+    orcid: "https://orcid.org/0000-0000-0000-0000"
+version: 1.0.0
+date-released: "2026-11-16"
+repository-code: "https://github.com/USERNAME/cd-gfactor-similarity"
+url: "https://doi.org/10.5281/zenodo.XXXXXXX"
+license: MIT
+keywords:
+  - circular dichroism
+  - g-factor
+  - chirality
+  - spectral similarity
+  - mirror image
+  - Cotton effect
+  - Python
