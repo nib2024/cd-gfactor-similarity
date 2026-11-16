@@ -99,7 +99,7 @@ The Excel sheet names and some headers are in Chinese in this release; see [`doc
 
 ## Method summary
 
-For a pair of spectra $A$ and $B$, the pipeline computes the Pearson correlation $r_{AB}(\delta)$ between $A(\lambda)$ and $B(\lambda+\delta)$ on the 300–500 nm window for $\delta\in[-20,20]$ nm. The same-sense score is $S=\max_\delta r_{AB}(\delta)$. Because a mirror-image CD spectrum has $g\to-g$, the mirror score is $M=\max_\delta[-r_{AB}(\delta)]=-\min_\delta r_{AB}(\delta)$. The optimal shifts, the margin $M-S$, Cotton-band sign concordance and phase-randomized surrogate p-values are combined into the decision classes *same-sense high similarity*, *same-sense shifted*, *mirror*, *mirror plus shift*, *weak/undetermined* and *dissimilar*. The complete description, equations and parameter table are in [`docs/SI_methods.md`](docs/SI_methods.md).
+For a pair of spectra $A$ and $B$, the pipeline computes the Pearson correlation $r_{AB}(\delta)$ between $A(\lambda)$ and $B(\lambda+\delta)$ on the 300–500 nm window for $\delta\in[-20,20]$ nm. The same-sense score is $S=\max_\delta r_{AB}(\delta)$. Because a mirror-image CD spectrum has $g\to-g$, the mirror score is $M=\max_\delta[-r_{AB}(\delta)]=-\min_\delta r_{AB}(\delta)$. The optimal shifts, the margin $M-S$, Cotton-band sign concordance and phase-randomized surrogate p-values are combined into the decision classes *same-sense high similarity*, *same-sense shifted*, *mirror*, *mirror plus shift*, *weak/undetermined* and *dissimilar*. The complete description and equations are in [`docs/SI_methods.md`](docs/SI_methods.md).
 
 ## Reproducibility
 

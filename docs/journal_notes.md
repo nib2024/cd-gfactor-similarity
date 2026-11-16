@@ -14,7 +14,7 @@ This note collects the practical differences and ready-to-paste statements. Repl
 ## Nature Communications
 
 - Nature Communications requires separate **Code availability** and **Data availability** sections after the Methods. Use exactly these headings.
-- The main Methods should give a concise version; the full algorithm, parameters and equations can live in the Supplementary Methods (`docs/SI_methods.md`).
+- The main Methods can give a one-sentence summary; the SI gives a concise description of the metrics and decision rules, and the repository contains the full implementation and parameter set.
 - Cite the archived code with its Zenodo DOI in the Code availability section. A GitHub URL alone is not sufficient for the archived version.
 - If figures are generated from the pairwise table or the matrices, deposit the underlying numerical values as Source Data and describe the mapping in the Source Data legend.
 - Suggested main-text Code availability wording:
@@ -48,7 +48,7 @@ This note collects the practical differences and ready-to-paste statements. Repl
 | `examples/make_demo_data.py` | Generates a synthetic demo dataset in both export layouts |
 | `examples/demo_data/` | Demo workbooks (synthetic, not experimental data) |
 | `tests/` | Unit and end-to-end tests (`python -m unittest discover -s tests -v`) |
-| `docs/SI_methods.md` | Full SI methods text (this document's companion) |
+| `docs/SI_methods.md` | Concise SI methods text (this document's companion) |
 | `docs/OUTPUTS.md` | Data dictionary for the output tables |
 | `docs/journal_notes.md` | This file |
 
@@ -71,4 +71,4 @@ The SI is written in Markdown with LaTeX equations. If Pandoc is available, conv
 pandoc docs/SI_methods.md -o SI_methods.docx
 ```
 
-Open the result in Word, apply the journal's SI template (font, spacing, page numbers), and replace the placeholders. The two supplementary tables are already Markdown tables and convert to Word tables.
+Open the result in Word, apply the journal's SI template (font, spacing, page numbers), and replace the placeholders. The SI is a short text with no tables.
