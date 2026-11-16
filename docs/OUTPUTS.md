@@ -57,6 +57,8 @@ The pipeline writes `CD_similarity_results.xlsx` plus two machine-readable CSV f
 | `置信度` | `高` (high), `中` (medium), `低` (low) |
 | `备注` | Notes: boundary shift, low SNR, insufficient band evidence, metric conflict, end-member flag, non-significant |
 
+The Excel table abbreviates the derivative columns as `S_d`, `M_d`, `δS_d` and `δM_d`; `pairwise_metrics.csv` uses the full names `S_deriv`, `M_deriv`, `dS_deriv` and `dM_deriv`.
+
 ## Decision classes
 
 | Chinese label | English label |
