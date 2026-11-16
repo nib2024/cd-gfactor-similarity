@@ -10,7 +10,7 @@ The code accompanies the manuscript on thiol-stabilised chiral nanoclusters. It 
 - Ignores instrument-metadata rows automatically.
 - Computes Pearson, cosine/SAM and NRMSE on raw, high-pass and first-derivative representations.
 - Searches a global rigid shift from −20 to +20 nm in 0.5 nm steps without truncating the 300–500 nm comparison window.
-- Separates the same-sense score \(S\) from the mirror score \(M\) and reports the optimal shifts for both.
+- Separates the same-sense score $S$ from the mirror score $M$ and reports the optimal shifts for both.
 - Matches Cotton bands by position and sign as an independent check.
 - Estimates significance with 2000 phase-randomized surrogates and Benjamini–Hochberg FDR within each workbook.
 - Writes an Excel workbook with formatted tables, 9 × 9 matrices and native charts, plus tidy CSV files.
@@ -99,14 +99,14 @@ The Excel sheet names and some headers are in Chinese in this release; see [`doc
 
 ## Method summary
 
-For a pair of spectra \(A\) and \(B\), the pipeline computes the Pearson correlation \(r_{AB}(\delta)\) between \(A(\lambda)\) and \(B(\lambda+\delta)\) on the 300–500 nm window for \(\delta\in[-20,20]\) nm. The same-sense score is \(S=\max_\delta r_{AB}(\delta)\). Because a mirror-image CD spectrum has \(g\to-g\), the mirror score is \(M=\max_\delta[-r_{AB}(\delta)]=-\min_\delta r_{AB}(\delta)\). The optimal shifts, the margin \(M-S\), Cotton-band sign concordance and phase-randomized surrogate p-values are combined into the decision classes *same-sense high similarity*, *same-sense shifted*, *mirror*, *mirror plus shift*, *weak/undetermined* and *dissimilar*. The complete description, equations and parameter table are in [`docs/SI_methods.md`](docs/SI_methods.md).
+For a pair of spectra $A$ and $B$, the pipeline computes the Pearson correlation $r_{AB}(\delta)$ between $A(\lambda)$ and $B(\lambda+\delta)$ on the 300–500 nm window for $\delta\in[-20,20]$ nm. The same-sense score is $S=\max_\delta r_{AB}(\delta)$. Because a mirror-image CD spectrum has $g\to-g$, the mirror score is $M=\max_\delta[-r_{AB}(\delta)]=-\min_\delta r_{AB}(\delta)$. The optimal shifts, the margin $M-S$, Cotton-band sign concordance and phase-randomized surrogate p-values are combined into the decision classes *same-sense high similarity*, *same-sense shifted*, *mirror*, *mirror plus shift*, *weak/undetermined* and *dissimilar*. The complete description, equations and parameter table are in [`docs/SI_methods.md`](docs/SI_methods.md).
 
 ## Reproducibility
 
 - Random seed: `20261114`
 - Surrogates: 2000
 - FDR: Benjamini–Hochberg within each workbook (36 tests), q < 0.05
-- Thresholds: \(S\) or \(M\ge0.70\); margin \(\ge0.20\); shift \(\ge3\) nm; SNR \(\ge20\); band mirror concordance \(\ge0.60\)
+- Thresholds: $S$ or $M\ge0.70$; margin $\ge0.20$; shift $\ge3$ nm; SNR $\ge20$; band mirror concordance $\ge0.60$
 - Runtime: about 90 s for 288 pairs with 2000 surrogates on a laptop
 
 ## Tests
